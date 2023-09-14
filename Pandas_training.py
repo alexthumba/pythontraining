@@ -21,6 +21,22 @@ print(df_teachers)
 print(df_teachers[df_teachers['Distance(km)']>20]['Name'])
 
 
+#Importing CSV files
+
+iris_data = pd.read_csv('c:/Users/alext/OneDrive/Documents/CodePython/Course excercises/iris.csv')
+
+#explore iris data
+iris_data.shape
+iris_data.head(5)
+iris_data.tail(5)
+
+#checking datatypes
+iris_data.dtypes
+
+#loc and iloc
+iris_data.loc[2:4]   #indexing starts from zero so you see the data from the position 3,4 &5
+iris_data.loc[2:4,'petal_length']  
+iris_data.iloc[2:4,2:3]
 
 
 
